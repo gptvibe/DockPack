@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 98%;
+    --foreground: 224 32% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 32% 12%;
+    --primary: 156 72% 35%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 28% 93%;
+    --secondary-foreground: 224 32% 18%;
+    --accent: 195 86% 94%;
+    --accent-foreground: 222 47% 11%;
+    --muted: 216 22% 95%;
+    --muted-foreground: 217 14% 38%;
+    --border: 214 24% 88%;
+    --input: 214 24% 88%;
+    --ring: 156 72% 35%;
+    --success: 148 63% 41%;
+    --success-foreground: 0 0% 100%;
+    --warning: 32 95% 48%;
+    --warning-foreground: 24 100% 12%;
+    --danger: 0 72% 54%;
+    --danger-foreground: 0 0% 100%;
+    --radius: 1.25rem;
+  }
+
+  .dark {
+    --background: 216 50% 8%;
+    --foreground: 210 40% 96%;
+    --card: 217 39% 12%;
+    --card-foreground: 210 40% 96%;
+    --primary: 156 65% 48%;
+    --primary-foreground: 224 42% 10%;
+    --secondary: 218 24% 18%;
+    --secondary-foreground: 210 40% 96%;
+    --accent: 216 29% 16%;
+    --accent-foreground: 210 40% 96%;
+    --muted: 218 24% 18%;
+    --muted-foreground: 214 16% 69%;
+    --border: 217 24% 22%;
+    --input: 217 24% 22%;
+    --ring: 156 65% 48%;
+    --success: 148 59% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 35 92% 56%;
+    --warning-foreground: 24 100% 10%;
+    --danger: 0 76% 61%;
+    --danger-foreground: 0 0% 100%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Bahnschrift", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    font-family: "Segoe UI Variable Display", "Segoe UI", "Bahnschrift", sans-serif;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.22);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

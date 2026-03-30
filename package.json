@@ -1,0 +1,15 @@
+{
+  "name": "dockpack",
+  "private": true,
+  "packageManager": "pnpm@10.8.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:builder": "pnpm --filter builder-desktop tauri dev",
+    "dev:web": "pnpm --filter builder-desktop dev",
+    "build:builder": "pnpm --filter builder-desktop tauri build",
+    "build:web": "pnpm --filter builder-desktop build"
+  }
+}
