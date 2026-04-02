@@ -7,6 +7,7 @@
     "dev": "vite --host 0.0.0.0 --port 1420",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
+    "test": "tsc -p tsconfig.test.json && node --test .test-dist/test/source-input.test.js",
     "tauri": "tauri"
   },
   "dependencies": {

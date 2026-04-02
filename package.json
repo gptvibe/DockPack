@@ -10,6 +10,7 @@
     "dev:builder": "pnpm --filter builder-desktop tauri dev",
     "dev:web": "pnpm --filter builder-desktop dev",
     "build:builder": "pnpm --filter builder-desktop tauri build",
-    "build:web": "pnpm --filter builder-desktop build"
+    "build:web": "pnpm --filter builder-desktop build",
+    "test:builder": "pnpm --filter builder-desktop test"
   }
 }

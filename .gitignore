@@ -4,6 +4,7 @@ dist/
 coverage/
 
 apps/*/dist/
+apps/*/.test-dist/
 apps/*/node_modules/
 apps/*/src-tauri/target/
 apps/*/src-tauri/gen/

@@ -15,10 +15,10 @@ export const navigationItems: NavigationItem[] = [
   {
     to: "/",
     label: "Home",
-    description: "Overview and recent work",
+    description: "Paste a source and begin",
     icon: Home,
-    headerTitle: "Workspace Overview",
-    headerSubtitle: "Monitor active packaging work, reopen recent projects, and keep the builder flow visible at a glance.",
+    headerTitle: "Start a New Package",
+    headerSubtitle: "Paste a Docker Hub image or GitHub repository, get friendly validation right away, and move into analysis with a clean source.",
   },
   {
     to: "/analyze",

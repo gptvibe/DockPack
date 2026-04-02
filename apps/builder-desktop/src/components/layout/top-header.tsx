@@ -26,7 +26,7 @@ export function TopHeader() {
           <Link className={buttonVariants({ variant: "outline", size: "sm" })} to="/settings">
             Workspace defaults
           </Link>
-          <Link className={buttonVariants({ size: "sm" })} to="/analyze">
+          <Link className={buttonVariants({ size: "sm" })} to="/">
             New package
           </Link>
         </div>
